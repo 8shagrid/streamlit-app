@@ -1,4 +1,4 @@
-Check My app demo: https://huggingface.co/spaces/dirgahs8/password-generator
+Check My app demo: https://8shagrid-streamlit-app-password-generatormain-z6gnc1.streamlit.app/
 
 
 
