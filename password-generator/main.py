@@ -34,32 +34,32 @@ include_numbers = st.checkbox("Angka")
 include_special_characters = st.checkbox("Karakter spesial")
 
 # Jarak
-st.write("")
-st.write("")
-st.write("")
-st.write("")
-st.write("")
-st.write("")
-st.write("")
-st.write("")
+for i in range(8):
+    st.write("")
+
+
 
 # Tombol generate
 if st.button("Generate"):
     characters = []
 
     if include_lowercase:
-        characters.extend(list(string.ascii_lowercase)) # abcdefghijklmnopqrstuvwxyz
+        characters.extend(list(string.ascii_lowercase))  # abcdefghijklmnopqrstuvwxyz
     if include_uppercase:
-        characters.extend(list(string.ascii_uppercase)) # ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        characters.extend(list(string.ascii_uppercase))  # ABCDEFGHIJKLMNOPQRSTUVWXYZ
     if include_numbers:
-        characters.extend(list(string.digits)) # 0123456789
+        characters.extend(list(string.digits))  # 0123456789
     if include_special_characters:
-        characters.extend(list(string.punctuation)) # !"#$%&'()*+, -./:;<=>?@[\]^_`{|}~
+        characters.extend(list(string.punctuation))  # !"#$%&'()*+, -./:;<=>?@[\]^_`{|}~
 
-    # Membuat kata sandi acak
-    password = "".join(random.sample(characters, password_length))
+        # Menampilkan hasil
+        st.text("Password Anda adalah:")
+        st.write("")
 
-    # Menampilkan hasil
-    st.text("Password Anda adalah:")
-    st.write("")
-    st.success(password)
+    try:
+        # Membuat kata sandi acak
+        password = "".join(random.sample(characters, password_length))
+        st.success(password)
+    except ValueError:
+        # Menampilkan pesan error
+        st.error('Pilih salah satu karakter diatas.')
