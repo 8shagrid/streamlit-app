@@ -1,3 +1,4 @@
+Check My app demo: https://huggingface.co/spaces/dirgahs8/password-generator
 ---
 title: Password Generator
 emoji: 🐠
@@ -9,4 +10,4 @@ app_file: app.py
 pinned: false
 ---
 
-Check My app demo: https://huggingface.co/spaces/dirgahs8/password-generator
+
