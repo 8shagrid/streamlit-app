@@ -54,7 +54,6 @@ if st.button("Generate"):
 
     # Menampilkan hasil
     st.text("Password Anda adalah:")
-    st.write("")
 
     try:
         # Membuat kata sandi acak
