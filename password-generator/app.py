@@ -52,14 +52,18 @@ if st.button("Generate"):
     if include_special_characters:
         characters.extend(list(string.punctuation))  # !"#$%&'()*+, -./:;<=>?@[\]^_`{|}~
 
-    # Menampilkan hasil
-    st.text("Password Anda adalah:")
+    
 
     try:
+        # Menampilkan hasil
+        st.text("Password Anda adalah:")
+         
         # Membuat kata sandi acak
         password = "".join(random.sample(characters, password_length))
+         
         # Menampilkan pesan sukses
         st.success(password)
+         
     except ValueError:
         # Menampilkan pesan error
         st.error('Pilih salah satu karakter diatas.')
