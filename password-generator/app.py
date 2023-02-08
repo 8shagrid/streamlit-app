@@ -52,9 +52,9 @@ if st.button("Generate"):
     if include_special_characters:
         characters.extend(list(string.punctuation))  # !"#$%&'()*+, -./:;<=>?@[\]^_`{|}~
 
-        # Menampilkan hasil
-        st.text("Password Anda adalah:")
-        st.write("")
+    # Menampilkan hasil
+    st.text("Password Anda adalah:")
+    st.write("")
 
     try:
         # Membuat kata sandi acak
